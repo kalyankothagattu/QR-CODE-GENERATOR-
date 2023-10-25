@@ -10,7 +10,7 @@ Create a QRCode object
 Set QRCode properties (version, error_correction, box_size, border)
 
 Add data to the QRCode object
-
+ 
 Generate QR code image
     Call make(fit=True) on the QRCode object
     Create image with specified fill_color and back_color
