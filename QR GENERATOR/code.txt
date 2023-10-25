@@ -1,9 +1,10 @@
+#for generating default qrcode 
 import qrcode as qr
 img = qr.make("https://www.instagram.com/")
 img.save("instagram.png")
 
 
-#alternate code for qr code generator(by its size)
+#alternate code for qr code generating by its size,colors
 
 import qrcode
 
