@@ -1,5 +1,5 @@
 # QR-CODE-GENERATOR-
-QR CODE GENERATOR USING PYTHON
+#QR CODE GENERATOR USING PYTHON
 Follow the below pseudo code
 Import qrcode library
 
