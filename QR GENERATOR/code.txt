@@ -1,0 +1,33 @@
+import qrcode as qr
+img = qr.make("https://www.instagram.com/")
+img.save("instagram.png")
+
+
+#alternate code for qr code generator(by its size)
+
+import qrcode
+
+# Input the data you want to encode into the QR code
+data = input("Enter the URL or text you want to encode: ")
+
+# Create a QRCode object
+qr = qrcode.QRCode(
+    version=1,
+    error_correction=qrcode.constants.ERROR_CORRECT_L,
+    box_size=10,
+    border=4,
+)
+
+# Add data to the QRCode object
+qr.add_data(data)
+qr.make(fit=True)
+
+# Generate QR code image
+img = qr.make_image(fill_color="black", back_color="white")
+
+# Input the file name for the generated QR code image
+file_name = input("Enter the file name for the QR code image (with extension, e.g., output.png): ")
+
+# Save the QR code image
+img.save(file_name)
+print(f"QR code generated and saved as {file_name}")
